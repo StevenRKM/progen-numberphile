@@ -169,9 +169,6 @@ generate = () ->
 
         console.log "generating", (100 * tracedPoints / maxTracedPoints), "%"
 
-        contextUI.fillStyle = "hsl(0, 100%, 50%)"
-        contextUI.fillText("Generating: " + (100 * tracedPoints / maxTracedPoints) + "%", width()/2, 50);
-
         if tracedPoints >= maxTracedPoints
             stopGenerating()
             return
